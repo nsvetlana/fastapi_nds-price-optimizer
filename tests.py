@@ -38,6 +38,8 @@ def test_typical_value_2():
         "input_price_with_nds": "1.81",
         "proc_nds": 18
     })
+
+
     assert response.status_code == 200, response.text
     data = response.json()
     assert data["corrected_price_with_nds"] == "1.77"
