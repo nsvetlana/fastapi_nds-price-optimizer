@@ -1,0 +1,22 @@
+[project]
+name = "nds-optimal-calcprices-api"
+version = "1.0.0"
+description = "Решение расчёта цен с НДС, использующее минимально допустимый шаг дискретизации."
+readme = "README.md"
+keywords = ["fastapi", "nds", "price", "api", "uvicorn"]
+requires-python = ">=3.7,<4.0"
+dependencies = [
+  "fastapi>=0.95.0",
+  "pydantic>=1.10.2",
+  "uvicorn[standard]>=0.17.0"
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.2",
+  "pytest-asyncio>=0.19.0"
+]
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
